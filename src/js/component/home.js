@@ -1,5 +1,5 @@
 import React from "react";
-import Semaforo from "./semaforo";
+import Semaforo from "./semaforo1.0";
 
 //create your first component
 export function Home() {

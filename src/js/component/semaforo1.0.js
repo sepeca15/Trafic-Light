@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 const Semaforo = () => {
-	const [colorRojo, setColorRojo] = useState("rgb(102, 0, 0)");
-	const [colorAmarillo, setColorAmarillo] = useState("rgb(255, 204, 0)");
-	const [colorVerde, setColorVerde] = useState("rgb(0, 102, 0)");
+	const [colorRojo, setColorRojo] = useState("rgb(102, 0, 0)"); //red off
+	const [colorAmarillo, setColorAmarillo] = useState("rgb(255, 204, 0)"); //amarillo off
+	const [colorVerde, setColorVerde] = useState("rgb(0, 102, 0)"); //verde off
 
 	return (
 		<div
@@ -21,9 +21,9 @@ const Semaforo = () => {
 					background: colorRojo
 				}}
 				onClick={() => {
-					setColorRojo("rgb(255, 0, 0)");
-					setColorAmarillo("rgb(255, 204, 0)");
-					setColorVerde("rgb(0, 102, 0)");
+					setColorRojo("rgb(255, 0, 0)"); //rojo on
+					setColorAmarillo("rgb(255, 204, 0)"); //amarillo off
+					setColorVerde("rgb(0, 102, 0)"); //verde off
 				}}></button>
 			<button
 				type="button"
@@ -35,9 +35,9 @@ const Semaforo = () => {
 					background: colorAmarillo
 				}}
 				onClick={() => {
-					setColorAmarillo("rgb(255, 255, 0)");
-					setColorRojo("rgb(102, 0, 0)");
-					setColorVerde("rgb(0, 102, 0)");
+					setColorAmarillo("rgb(255, 255, 0)"); //amarillo on
+					setColorRojo("rgb(102, 0, 0)"); //rojo off
+					setColorVerde("rgb(0, 102, 0)"); //verde off
 				}}></button>
 			<button
 				type="button"
